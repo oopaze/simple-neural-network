@@ -11,7 +11,7 @@ def sigmoid(x):
     return  1.0/(1.0 + exp(-x))
 
 def dev_sigmoid(x):
-    return 1 - sigmoid(x)
+    return sigmoid(x) * (1 - sigmoid(x))
 
 
 class Base:

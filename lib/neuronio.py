@@ -16,4 +16,5 @@ class Neuronio(Base):
         return self.ultima_saida
     
     def back_foward(self, erro: float, taxa_aprendizagem: float):
+        self.ultimo_erro = erro
         self.peso = self.peso - erro * taxa_aprendizagem 
