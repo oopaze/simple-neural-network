@@ -23,5 +23,5 @@ if __name__ == "__main__":
         quantidade_neuronios_entrada=2
     )
 
-    for data in data_matriz:
-        print(nn.treinar(data))
+    for i, data in enumerate(data_matriz):
+        print(nn.treinar(data, results[i]))
